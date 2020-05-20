@@ -4,17 +4,24 @@
         <h1 style="color:orange;"><%= title %></h1>
     </div>
 <div class="box">
-<%  for(var i=0;i< want.length ;i++)
+<% want.forEach(function(element)
 { %>
-<div class="item">
-<input type="checkbox">
-<p><%= want[i] %> </p>
-</div>
-<%  } %>
+<form action="/delete" method="post">
+    <div class="item">
+    <input type="checkbox" onChange="this.form.submit()" name="checkbox" value= "<%= element._id %>">
+    <p> <%= element.name %> </p>
+    </div>
+    <input type="hidden" name="listnam" value="<%= title %>">
+</form>
+
+<%  }) %>
 <form  class="item"  action="/" method="post">
 <input class="ok" type="text" name="want" placeholder="New item" autocomplete="off">
-<button type="submit" name="click" value=<%= title %>>+</button>
+<button  type="submit" name="click" value=<%= title %>>+</button>
 </form>
+
+
 </div>
 
- <%- include('f'); -%>
+
+ <%- include('footer'); -%>

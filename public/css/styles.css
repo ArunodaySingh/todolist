@@ -59,7 +59,7 @@ form {
   margin-left: 20px;
 }
 
-button {
+button[type="submit"] {
   min-height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -96,4 +96,21 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+.your_work{
+  display: inline-block;
+
+  margin-left: 1200px;
+
+  text-align: center;
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+
 }
