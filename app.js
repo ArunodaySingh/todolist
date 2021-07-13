@@ -9,7 +9,7 @@ app.set('view engine' , "ejs")
 mongoose.set('useFindAndModify', false);
 app.use(bp.urlencoded({extended:true}))
 app.use(express.static('public'));
-mongoose.connect('mongodb+srv://Arunoday:Arunoday@123@cluster0-u01rr.mongodb.net/todolistDB',{useNewUrlParser:true,useUnifiedTopology:true})
+mongoose.connect('})
 
 const todoschema=new mongoose.Schema({
 name:{
